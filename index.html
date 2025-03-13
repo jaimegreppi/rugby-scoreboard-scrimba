@@ -1,0 +1,49 @@
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <title>Rugby Socreboard</title>
+    </head>
+    <body role="img" aria-role="A rugby union scrum initializing.">
+        <div class="container">
+            <div class="side-board">
+                <h3>HOME</h3>
+                <p class="score" id="hscore-el">0</p>
+                <div class="buttons">
+                    <div class="buttons1">
+                        <button class="button" id="penaltyH-btn" onclick="penaltyH()">Penalty kick<br>(+3)</button>
+                        <button class="button" id="dropH-btn" onclick="dropH()">Drop goal<br>(+3)</button>
+                    </div>
+                    <div class="tryButtons">
+                        <button class="button try" id="tryH-btn" onclick="tryH()">Try!<br>(+5)</button>
+                        <div class="buttons2">
+                            <button class="button" id="missedH-btn" onclick="missedH()">Missed<br>conversion<br>(0)</button>
+                            <button class="button" id="conversionH-btn" onclick="conversionH()">Conversion<br>(+2)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="side-board">
+                <h3>GUEST</h3>
+                <p class="score" id="gscore-el">0</p>
+                <div class="buttons">
+                    <div class="buttons1">
+                        <button class="button" id="penaltyG-btn" onclick="penaltyG()">Penalty kick<br>(+3)</button>
+                        <button class="button" id="dropG-btn" onclick="dropG()">Drop goal<br>(+3)</button>
+                    </div>
+                    <div class="tryButtons">
+                        <button class="button try" id="tryG-btn" onclick="tryG()">Try!<br>(+5)</button>
+                        <div class="buttons2">
+                            <button class="button" id="missedG-btn" onclick="missedG()">Missed<br>conversion<br>(0)</button>
+                            <button class="button" id="conversionG-btn" onclick="conversionG()">Conversion<br>(+2)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="newgame-btn" onclick="newGame()">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html>
